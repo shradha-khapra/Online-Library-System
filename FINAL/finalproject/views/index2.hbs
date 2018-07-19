@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Handlebars</title>
+    <link type="text/css" rel="stylesheet" href="final3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="outer container">
+    <div class="topheading">Book Information</div>
+    <div class="row">
+        <div class="inner1 col">
+            <div align="center">
+
+            <img class="picture" src="{{data.volumeInfo.imageLinks.thumbnail}}" alt="Book">
+            </div>
+        </div>
+        <div class="inner2 col">
+            <div>
+
+            <div class="titles">
+            <div class="heading">Title:</div>
+            <div class="info">{{data.volumeInfo.title}} <br></div>
+            </div>
+            <div class="titles">
+            <div class="heading">Authors:</div>
+            <div class="info">{{#each data.volumeInfo.authors}}
+                {{this}}<br>
+            {{/each}}
+            </div>
+            </div>
+            <div class="titles">
+            <div class="heading">Publisher:</div>
+            <div class="info">{{data.volumeInfo.publisher}}({{data.volumeInfo.publishedDate}})<br></div>
+            </div>
+            <div class="titles">
+            <div class="heading">Description:</div>
+            <div class="info">{{data.volumeInfo.description}}<br></div>
+            </div>
+            <div class="titles">
+            <div class="heading">Genres:</div>
+            <div class="info">{{data.volumeInfo.categories.[0]}}<br></div>
+            </div>
+            <div class="titles" style="display: flex; flex-wrap: wrap">
+            <div class="heading">Preview Link:</div>
+            <div class="info"><a href="{{data.volumeInfo.previewLink}}" target="_blank">Click here</a><br></div>
+            </div>
+        </div>
+<div align="center">
+                <button id="btn">View pdf</button><br>
+</div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    let btn=$('#btn');
+    btn.on('click',function(){
+        <!--let URL=``;-->
+    <!--$.ajax({-->
+        <!--url:URL,-->
+        <!--type:'GET',-->
+        <!--success:function(data){-->
+       <!--console.log(data);-->
+        <!--}-->
+    <!--})-->
+        window.location = `{{data.accessInfo.webReaderLink}}`;
+
+    })
+</script>
+</html>
+

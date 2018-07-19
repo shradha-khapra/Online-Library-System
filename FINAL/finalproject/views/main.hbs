@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PROJECT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="final.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Kavivanar|Anton" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid bod">
+    <div class="jumbotron text-center" style="font-family: 'Acme', sans-serif;">
+        LIBOFLY</div>
+
+   <div id="a">
+    <div class="center" align="center">
+        <div class="search">Search</div><div class="b" style="display:none"><br><br></div>
+        <button type="button" class="btn btn-danger btn1">Title</button><div class="b" style="display:none"><br><br></div>
+        <button type="button" class="btn btn-danger btn2">Author</button><div class="b" style="display:none"><br><br></div>
+        <button type="button" class="btn btn-danger btn3">Publisher</button><div class="b" style="display:none"><br><br></div>
+        <button type="button" class="btn btn-danger btn4">Genre</button>
+    </div>
+    <br>
+
+    <div class="container con" >
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="item active" >
+                    <div style="display: flex; flex-wrap: wrap">
+                        <img src="https://qph.ec.quoracdn.net/main-qimg-dcf7f137d87bce4a20b2a6604b656398-c" alt="Los Angeles" style="width:50%;">
+                        <img src="https://vignette.wikia.nocookie.net/harrypotter/images/8/85/Harry_Potter_Cover_5_Serbian.jpg/revision/latest?cb=20160417205745" alt="Chicago" style="width:50%;">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div style="display: flex; flex-wrap: wrap">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/41fpRc4Y5vL._SX340_BO1,204,203,200_.jpg" alt="Chicago" style="width:50%;">
+                        <img src="https://bi.hcpdts.com/page/750/EwIaWqDxBJPJUu7rJh2VzWY99+ygTC01u7EBSDcDNNdS7vB3CidS!pxvgzMNfZ1nRiJTw0coSw6po!WgF19IVdFbf0Q0QVY6rarC6edK77UksSxHZymU8xoTCuRylHu9/WceGgDUNlCA8RPHOz66AbHHs4RI12Vqg+OoBRGBrKx0gjMb1TSGn63!P3!BaM61Ycim7TPw2yzIaTKEqk4wNnDHjr1b6gOv!JK2gG4iMspVQ5iDKyCBWtzAWMsmQ+7PK" alt="Chicago" style="width:50%;">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div style="display: flex; flex-wrap: wrap">
+                        <img src="https://alchetron.com/cdn/The-Girl-with-the-Dragon-Tattoo-2011-film-images-dec5fdb3-4976-49b6-94e0-e3f10b99f32.jpg" alt="New york" style="width:50%;">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/51n6icXozuL.jpg" alt="Chicago" style="width:50%;">
+                    </div>
+                </div>
+                <div class="item">
+                    <div style="display: flex; flex-wrap: wrap">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/5132qfIGVwL.jpg" alt="New york" style="width:50%;">
+                        <img src="https://images.gr-assets.com/books/1480348423l/31675787.jpg" alt="Chicago" style="width:50%;">
+                    </div>
+                </div>
+                <div class="item">
+                    <div style="display: flex; flex-wrap: wrap">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/518ICrLrtiL._SX319_BO1,204,203,200_.jpg" alt="New york" style="width:50%;">
+                        <img src="https://prodimage.images-bn.com/pimages/0024543954521_p0_v3_s550x406.jpg" alt="Chicago" style="width:50%;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+       <div class="displayy"  style="display:none;">
+           <input id="inp" style="margin-top: 20px;" placeholder="enter"><br><br>
+           <div align="center">
+               <button type="button" id="sub" class="btn btn-success">BROWSE</button>
+           </div>
+           <div id="result"></div>
+       </div>
+
+   </div>
+
+
+
+</div>
+</body>
+<script src="client1.js"></script>
+</html>

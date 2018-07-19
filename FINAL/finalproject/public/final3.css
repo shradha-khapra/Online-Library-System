@@ -1,0 +1,90 @@
+.inner1{
+    width: 30%;
+}
+.inner2{
+    color: black;
+    font-size: 17px;
+    margin-top: 10px;
+    /*text-align: center;*/
+    width: 60%;
+    margin-left: 8%;
+}
+.heading{
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: bold;
+    color: black;
+    margin-right: 2%;
+}
+.info{
+    margin-top: 4px;
+}
+.picture{
+    height:300px;
+    width: 100%;
+    border: 5px solid black;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+.topheading{
+    font-size: 60px;
+    font-weight: bolder;
+    text-align: center;
+    color: black;
+    margin-top: 10px ;
+    font-family: 'Nanum Pen Script', cursive;
+}
+body,html{
+    height: 100%;
+}
+.outer{
+    /*background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiBJJcyMVKQpcYmpWbPPlxf8UltVzcTIulwtiu7tiw-IEQpSt8);*/
+    /*background-image: url(http://images.all-free-download.com/images/graphiclarge/nostalgic_blue_background_06_hd_pictures_169782.jpg);*/
+    background-image: url(http://s3.gomedia.us/wp-content/uploads/2011/09/Fudgegraphics-Wallpaper-Case-Study-13.jpg);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#btn{
+    margin-bottom: 20px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap
+}
+@media  screen and (max-width: 700px) and (min-width: 350px){
+    .row{
+        display: block;
+    }
+    .inner1{
+        width:100%;
+        margin: 0 auto;
+    }
+    .picture{
+        width: 50%;
+        margin-top: 2%;
+    }
+    .inner2{
+        margin-left:5%;
+        width: 90%;
+    }
+
+
+}
+@media  screen and (max-width: 350px) {
+.picture{
+    width: 80%;
+}
+    .inner1{
+        width:100%;
+        margin: 0 auto;
+    }
+    .inner2{
+        margin-left:5%;
+        width: 90%;
+    }
+.topheading{
+    font-size: 40px;
+}
+}
